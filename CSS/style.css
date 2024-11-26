@@ -225,6 +225,9 @@ i {
 #back-to-top:hover {
     background-color: #555;
 }
+h3{
+    color: white;
+}
 
 
 @keyframes fadeInHeader {
