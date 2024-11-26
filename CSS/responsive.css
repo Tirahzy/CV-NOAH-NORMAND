@@ -1,0 +1,86 @@
+
+@media screen and (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .education, .skills, .experience, .contact {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .skill-bar {
+        height: 12px;
+    }
+
+    .contact button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile-photo {
+        width: 90px;
+        height: 90px;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    .skill-bar {
+        height: 10px;
+    }
+
+    .contact button {
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 20px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .profile-header {
+        margin-top: 10px;
+    }
+
+    .profile-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contact button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .education-item, .experience-item {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Comfortaa:wght@300..700&family=Dosis:wght@200..800&family=Oleo+Script:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa'
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #00000088;
+}
+
+header {
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+    animation: fadeInHeader 1.5s ease-out;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: #000000;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    color: #000000;
+    opacity: 0;
+    animation: fadeInNav 2s ease-out forwards;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+}
+
+.profile-header {
+    text-align: center;
+    margin-top: 20px;
+    background-image: url(https://4kwallpapers.com/images/wallpapers/stars-in-sky-dark-3840x2160-15485.jpg);
+    color: white;
+    animation: fadeIn 1.5s ease-out;
+    background-attachment: fixed;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeInProfile 1.5s ease-out forwards;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.profile-photo:hover {
+    transform: scale(1.2);
+}
+
+.social-icons a i {
+    height: auto;
+    width: auto;
+    margin: 0 10px;
+    animation: fadeInSocial 2s ease-out forwards;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.education,
+.skills,
+.experience,
+.contact {
+    flex: 1 1 45%;
+    margin: 20px;
+    opacity: 0;
+    animation: fadeInMainContent 1.5s ease-out forwards;
+    color: #000000;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.education-item,
+.experience-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+
+
+.skills {
+    background: url(https://plus.unsplash.com/premium_photo-1668091148044-056cd744e64a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2t5JTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D) no-repeat center center/cover;
+    padding: 20px;
+    border-radius: 5px;
+    background-attachment: fixed;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+.skill {
+    margin: 10px 0;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+}
+
+.skill-level {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+
+.contact {
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://images.unsplash.com/photo-1699891730676-037bed3c1bed?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2Vic2l0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D);
+    border-radius: 5px;
+    opacity: 0;
+    animation: fadeInMainContent 1.5s ease-out forwards;
+    background-attachment: fixed;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    animation: fadeInFooter 1.5s ease-in-out;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f39c12;
+}
+
+.social-icons a img {
+    width: 25px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+i {
+    color: white;
+}
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+#back-to-top:hover {
+    background-color: #555;
+}
+
+
+@keyframes fadeInHeader {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInNav {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInProfile {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSocial {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInMainContent {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFooter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
